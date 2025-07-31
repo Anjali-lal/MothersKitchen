@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mother's Kitchen</title>
+  <link rel="stylesheet" href="project.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Mother's Kitchen</div>
+    <nav>
+      <a href="#">Menu</a>
+      <a href="#">Food Delivery</a>
+      <a href="#">Special Offers</a>
+      <a href="#">Contact Us</a>
+      <div class="buttons">
+      <button class="login-btn" onclick="openLoginForm()">Login</button>
+        <button>Order Now</button>
+      </div>
+    </nav>
+  </header>
+
+<div id="loginModal" class="login-modal">
+  <div class="login-box">
+    <span class="close-btn" onclick="closeLoginForm()">&times;</span>
+    <h2>Login to Mother's Kitchen</h2>
+    <form onsubmit="return handleLogin(event)">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email ID or Phone Number" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+
+  <div style="padding: 100px; color: white;text-align: center;">
+    <h1 style="margin-top: 150px;">Welcome to Mother's Kitchen</h1>
+    <p style="margin-top: 10px;">Enjoy delicious homemade meals delivered to your door.</p>
+    
+  </div>
+<div class="arrow-container">
+  <div class="line"></div>
+  <div class="arrow-text">We are ready to takeout and delivery</div>
+  <div class="line"></div>
+  <div class="down-arrow">↓</div>
+</div>
+
+
+ <div class="order-box">
+    <div class="hanging-board">open</div>
+    <p style="text-align: center;margin-top: 70px;color: white;font-size: 25px;">Your Order Will be Conformed in REAL-TIME</p>
+    <div class="button-area">
+      <button>Table Reservation</button>
+      <button>See Menu & Order</button>
+    </div>
+  </div>
+
+  <section class="restaurant-section">
+    <h2 style="color: blueviolet;text-underline-position: below;">Our Restaurant</h2>
+    <div class="image-gallery">
+      <div class="interior"><img src="pictures/download.jpeg" alt="Restaurant Interior"></div>
+      <div class="Dfood"><img src="pictures/download (4).jpeg" alt="Delicious Food"></div>
+      <div class="seating"><img src="pictures/download (3).jpeg" alt="Outdoor Seating"></div>
+    </div>
+  </section>
+
+     <h2 style="color: rgb(32, 174, 179);text-underline-position: below;">Special Offers</h2>
+    <div class="offers-section">
+    <div class="offer-box" style="background-image: url('pictures/delicious-pizza-studio_23-2151846558.avif');">
+      <h3 style="color: white;margin-bottom: 20px;">Meals for 2</h3>
+      <p style="color: white;margin-bottom: 80px;">Buy 2 large chicken pizzas for only $20, instead of $25 <br>(Extra toppings charged on top)</p>
+      <button class="view-button">View Deals</button>
+    </div>
+
+    <div class="offer-box" style="background-image: url('pictures/1a2c1268df33b5b2cea4f598b5a44081.jpg');">
+      <h3 style="color: rgb(240, 151, 77);margin-bottom: 20px;">Buy 1 Get 1 Free</h3>
+      <p  style="color: rgb(240, 151, 77);margin-bottom: 20px;">Enjoy a free item when you buy any 1 food items!</p>
+      <button class="view-button">View Deals</button>
+    </div>
+  </div>
+    </div>
+      
+    <div class="free-delivery">
+    <div class="delivery" style="background-image: url('pictures/f428f3f6c602f2fde215441ac4660c6f.jpg');">
+      <button class="view-button">View Deals</button>
+    </div>
+    </div>
+ 
+
+     <section class="about-section">
+    <h2>About Restaurant - Mother's Kitchen</h2>
+    <i><p>
+      Welcome to Mother's Kitchen – where every dish is a reminder of home-cooked warmth. 
+      We specialize in authentic, lovingly prepared meals that bring comfort to every bite.
+    </p>
+    <p>
+      Established with the idea of serving tradition with a modern twist, our recipes 
+      come from generations of culinary passion and attention to detail.
+    </p>
+    <p>
+      Whether you’re dining in, reserving a table for two, or ordering out, 
+      Mother's Kitchen promises freshness, flavor, and a heartfelt experience.
+    </p></i>
+  </section>
+
+
+   <section class="italian-food-section">
+    <h2>Italian Food in Our Restaurant</h2>
+
+    <div class="photo-row">
+      <img src="pictures/images (4).jpeg" alt="Italian Dish 1">
+      <img src="pictures/download (10).jpeg" alt="Italian Dish 2">
+      <img src="pictures/download (8).jpeg" alt="Italian Dish 3">
+    </div>
+
+    <div class="photo-row">
+      <img src="pictures/images (1).jpeg" alt="Italian Dish 4">
+      <img src="pictures/images (2).jpeg" alt="Italian Dish 5">
+      <img src="pictures/images (3).jpeg" alt="Italian Dish 6">
+    </div>
+
+  </section>
+
+
+  <div class="hanger-wrapper">
+    <div class="screw"></div>
+    <div class="thread"></div>
+    <div class="sign-board">
+      <h2 style="margin-top: 20px;">Opening Hours</h2>
+      <div class="hours">
+        <span>Monday – Friday</span>
+        <span>1 PM – 12 PM</span>
+      </div>
+      <div class="hours">
+         <span>Saturday – Sunday</span>
+        <span>12 PM – 9 PM</span>
+      </div>
+    </div>
+  </div>
+  
+   <section class="Mother's kitchen">
+    <h2 style="color: rgb(75, 10, 129);font-size: 36px;">Mother's <i>Kitchen</i> Dine-In QR Code</h2>
+  <div class="qr-container">
+    <div class="top">Scan for Menu and Order</div>
+    <div class="left"></div>
+    <div class="center">
+      <img src="pictures/menu-flyer-template-design-scan-qr-code-menu-d4e27a5946fbfd39bda47fba2780a9ec_screen.jpg" alt="QR Code">
+    </div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+  </div>
+   </section>
+
+
+   <div class="book">
+    <div class="left-page">
+      <div class="map">
+        <div class="map-pin"></div>
+        <div class="circle red"></div>
+        <div class="circle orange"></div>
+        <div class="circle green"></div>
+      </div>
+    </div>
+
+    <div class="right-page">
+      <h2>Food Delivery in Ernakulam</h2>
+      <p>Looking for food delivery in Ernakulam? Not everybody has the time to prepare tasty food.</p>
+      <p>We deliver across multiple zones, whether you're near the center or in the outskirts. The green zone enjoys fastest delivery while red zones may experience slight delays.</p>
+      <p>Our dedicated service operates 7 days a week with timely delivery between 12 PM to 11 PM. Quality and punctuality is our priority.</p>
+      <div class="delivery-legend">
+  <div class="legend-item">
+    <span class="color-circle green"></span>
+    Free Delivery – Fees $0.00
+  </div>
+  <div class="legend-item">
+    <span class="color-circle orange"></span>
+    Min $5.00 – Fees $2.00
+  </div>
+  <div class="legend-item">
+    <span class="color-circle red"></span>
+    Min $7.00 – Fees $2.00
+  </div>
+</div>
+    </div>
+  </div>
+
+   <div class="ordering-section">
+    <div class="mic-icon">
+      <i class="fas fa-microphone-alt"></i>
+    </div>
+    <h2 style="margin-top: 10px;">New! Online Ordering</h2>
+    <p>
+      Online ordering <strong>NOW enabled</strong> for pick-up. Just tell us what you want and we'll prepare it as fast as we can.
+      All orders are manually confirmed by us directly. Find out in real-time when your food is ready.
+      All orders are manually confirmed by us in real-time. Watch on-screen when your food is ready for pickup.
+    </p>
+  </div>
+
+  <div class="app-section">
+    <h2 >Our Restaurant Mobile App</h2>
+    <p>
+      You can now order online from Restaurant Pronto in New York using your own smartphone.
+      We'll be delighted to confirm your order in real-time. Simply download the app and start
+      ordering online from Restaurant Pronto.
+      <br><br>
+      Depending on your device, you should choose to install the Restaurant Pronto Android mobile app
+      or the Restaurant Pronto iOS mobile app.
+    </p>
+
+    <div class="store-buttons">
+
+      <a href="#" class="store-button google-button">
+        <img src="pictures/Which-one-do-you-prefer-Apple-Store-or-Google-Play.png" alt="Google Play">
+        
+      </a>
+  </div>
+
+    <section class="cert-section">
+    <h2>Certificates</h2>
+
+    <div class="cert-grid">
+
+      <div class="cert-box">
+        <h3>Business License</h3>
+        <p>Authorizes our restaurant to legally operate in the region.</p>
+      </div>
+
+      <div class="cert-box">
+        <h3>Food Handler's Permit</h3>
+        <p>Ensures all staff are trained in safe food handling practices.</p>
+      </div>
+
+      <div class="cert-box">
+        <h3>Liquor License</h3>
+        <p>Permits the sale and service of alcoholic beverages.</p>
+      </div>
+
+      <div class="cert-box">
+        <h3>Music License</h3>
+        <p>Allows us to play copyrighted music in the restaurant legally.</p>
+      </div>
+
+      <div class="cert-box">
+        <h3>Certificate of Occupancy</h3>
+        <p>Verifies the building meets all zoning and building code requirements.</p>
+      </div>
+
+      <div class="cert-box">
+        <h3>Flammable Material Permit</h3>
+        <p>Grants approval to safely store and use flammable kitchen supplies.</p>
+      </div>
+
+      <div class="cert-box">
+        <h3>Health Department Permit</h3>
+        <p>Confirms our kitchen meets health and sanitation standards.</p>
+      </div>
+
+    </div>
+  </section>
+
+   <h2 style="font-size: 40px;margin-bottom: 50px;margin-top: -200px;color: brown;">We Are Hiring!</h2>
+
+  <div class="job-container">
+
+    <div class="job-box">
+      <div class="job-title">We're Hiring: Chef</div>
+      <div class="posted-date">Posted on July 7 at 7:30 AM</div>
+
+      <div class="application">
+        <span>Send an application to:</span>
+        <a href="mailto:hr@restaurant.com">hr@restaurant.com</a>
+        <button class="apply-btn">Apply Now</button>
+      </div>
+
+      <div class="sub-heading">Job Description</div>
+      <div class="job-description">
+        We are looking for a creative and skilled chef to lead our kitchen. Experience with multi-cuisine is a bonus.
+      </div>
+
+      <div class="sub-heading">Ideal Candidate Will Be:</div>
+      <div class="ideal-candidate">
+        <ul>
+          <li>Experienced in commercial kitchens</li>
+          <li>Creative and passionate about food</li>
+          <li>Able to manage kitchen staff</li>
+          <li>Well-versed in hygiene standards</li>
+        </ul>
+      </div>
+
+      <div class="sub-heading">Salary</div>
+      <div class="salary">
+        According to the experience.
+      </div>
+    </div>
+
+    <div class="job-box">
+      <div class="job-title">We're Hiring: Waiter</div>
+      <div class="posted-date">Posted on July 7 at 7:30 AM</div>
+
+      <div class="application">
+        <span>Send an application to:</span>
+        <a href="mailto:hr@restaurant.com">hr@restaurant.com</a>
+        <button class="apply-btn">Apply Now</button>
+      </div>
+
+      <div class="sub-heading">Job Description</div>
+      <div class="job-description">
+        We're seeking a friendly and professional waiter to provide outstanding table service and ensure guest satisfaction.
+      </div>
+
+      <div class="sub-heading">Ideal Candidate Will Be:</div>
+      <div class="ideal-candidate">
+        <ul>
+          <li>Friendly and customer-focused</li>
+          <li>Quick and efficient under pressure</li>
+          <li>Knowledgeable about the menu</li>
+          <li>Excellent communication skills</li>
+        </ul>
+      </div>
+
+      <div class="sub-heading">Salary</div>
+      <div class="salary">
+        According to the experience.
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="main-footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h4>Mother's Kitchen</h4>
+      <p>Delicious food, real-time delivery, and certified quality — now just a tap away. Visit us or order online from Ernakulam.</p>
+      <p><strong>Email:</strong> <a href="mailto:info@motherskitchen.com">info@motherskitchen.com</a></p>
+      <p><strong>Location:</strong> Ernakulam, Kerala, India</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Special Offers</a></li>
+        <li><a href="#">Order Online</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Certificates</a></li>
+      </ul>
+    </div>
+
+    <script>
+  function openLoginForm() {
+    document.getElementById("loginModal").style.display = "flex";
+  }
+
+  function closeLoginForm() {
+    document.getElementById("loginModal").style.display = "none";
+  }
+
+  function handleLogin(event) {
+    event.preventDefault();
+    alert("Login successful!");
+    closeLoginForm();
+    window.location.href = "index.html";
+  }
+</script>
+
+
+    <div class="footer-col">
+      <h4>Get Our App</h4>
+      <a class="store-btn google" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+      </a>
+      <a class="store-btn apple" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="App Store">
+        <span>Download on the App Store</span>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Mother's Kitchen. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
