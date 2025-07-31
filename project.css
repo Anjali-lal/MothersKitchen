@@ -152,7 +152,7 @@
       width: 90%;
       max-width: 800px;
       height: 200px;
-      background-image: url('pictures/Plain-Background-For-Desktop.jpg'); 
+      background-image: url('images/Plain-Background-For-Desktop.jpg'); 
       background-size: cover;
       background-position: center;
       border-radius: 15px;
@@ -410,7 +410,7 @@
       width: 300px;
       padding: 20px;
       margin-top: 100px;
-      background-image: url('pictures/download (1).jpeg'); 
+      background-image: url('images/download (1).jpeg'); 
       background-size: cover;
       background-position: center;
       border-radius: 10px;
@@ -498,7 +498,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      background-image:url(pictures/edappallykochi.png) ;
+      background-image:url(images/edappallykochi.png) ;
       background-size: contain;
     }
 
